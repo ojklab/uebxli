@@ -1,108 +1,216 @@
 <!DOCTYPE html>
 <html>
-<title>UebXli</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
-<body>
+  <title>UebXli</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar" id="myNavbar">
+        <a
+          class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0);"
+          onclick="toggleFunction()"
+          title="Toggle Navigation Menu"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="w3-bar-item w3-button">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-user"></i> ABOUT</a
+        >
+        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-th"></i> PORTFOLIO</a
+        >
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-envelope"></i> CONTACT</a
+        >
+      </div>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-  </div>
-</div>
-
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">UebXli</span>
-  </div>
-</div>
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT</h3>
-  <p class="w3-center"><em>UebXli（ウェブクリ）とは</em></p>
-  <p>UebXliという名前は<a href="https://ja.wikipedia.org/wiki/%E3%83%AD%E3%82%B8%E3%83%90%E3%83%B3">ロジバン語</a>から取ったもので「Web Girl」という意味です。ウェブクリは、ウェブ技術を中心としたプログラミングやコーディング、UI/UXデザインを自主的に学びたいと考えている学生たちを繋ぎ、応援するオンラインサークルです。</p>
-  <p><a href="https://slack.com/intl/ja-jp/">Slack</a>というチャットツールを使って、各自で勉強していることを共有したり、一緒にチームを組んでウェブアプリ開発やウェブサイト制作に取り組んでいきます。一人ではどうしていいかわからなくて立ち止まってしまうようなことも、Slackで訊けばメンバーの誰かが教えてくれるかもしれません。誰もわからなくても、一緒に調べてくれる人がいるだけで心強いですよね。</p>
-  <p>また、週に1回くらいのペースで、合同の「勉強会」や「もくもく会」を開催します。勉強会は、OJKや先輩に講義をしてもらったり、みんなでテーマを決めて勉強してきたことを発表したり。もくもく会というのは、普段は個人でやっている作業を同じ場所に集まってするというイベントです。本当に“黙々”と作業をしてもよいですが、わからないところを教え合ったり、お菓子を持ち寄っておしゃべりしながら作業するのが楽しそう。</p>
-  <p>ウェブクリの具体的な目的は「ポートフォリオ（作品集）」を積み上げていくことです。開発・制作した作品は<a href="https://www.vivivit.com/">vivivit</a>などのポートフォリオサービスに登録して関連企業の目に触れるようにします。また、2年生や3年生の夏休みに<a href="https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%83%E3%82%AB%E3%82%BD%E3%83%B3">ハッカソン</a>に参加することも目指しています。本学は普通の4年制大学（しかも文理融合型学科）ですから、プログラマやデザイナになりたければ、こうしたルートで企業から見つけてもらうほうが早道です。</p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>O J K</b> （顧問）</p><br>
-      <img src="img/ozekirin_long_circle.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of OJK" width="300" height="333">
-    </div>
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      OJKはウェブクリの顧問です。<br>
-      授業では、プログラミング入門（P5.js）、ウェブコンピューティング（HTMLとCSSの基礎）、ウェブアプリケーション論（JavaScript）、ウェブアプリケーション設計演習（Vue.js、API）を担当しています。<br>
-      これらは1年後期～3年後期にかけての授業ですが、ハッカソンへの参加を考えると2年後期までに終わらせるべき内容なので、ウェブクリではまずこれらの内容を勉強していきます。
-    </div>
-  </div>
-  <p class="w3-large w3-center w3-padding-16">We're challenge to:</p>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Programming</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:35%">35%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web GL (Game)</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:10%">10%</div>
-  </div>
-</div>
-
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">OUR WORK</h3>
-  <p class="w3-center"><em>まだ作品はありません。がんばります。<br>画像はサンプルです。</em></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="img/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+      <!-- Navbar on small screens -->
+      <div
+        id="navDemo"
+        class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium"
+      >
+        <a
+          href="#about"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >ABOUT</a
+        >
+        <a
+          href="#portfolio"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >PORTFOLIO</a
+        >
+        <a
+          href="#contact"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >CONTACT</a
+        >
+      </div>
     </div>
 
-    <div class="w3-col m3">
-      <img src="img/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+      <div class="w3-display-middle" style="white-space: nowrap">
+        <span
+          class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"
+          >UebXli</span
+        >
+      </div>
     </div>
 
-    <div class="w3-col m3">
-      <img src="img/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <h3 class="w3-center">ABOUT</h3>
+      <p class="w3-center"><em>UebXli（ウェブクリ）とは</em></p>
+      <p>
+        UebXliという名前は<a
+          href="https://ja.wikipedia.org/wiki/%E3%83%AD%E3%82%B8%E3%83%90%E3%83%B3"
+          >ロジバン語</a
+        >から取ったもので「Web
+        Girl」という意味です。ウェブクリは、ウェブ技術を中心としたプログラミングやコーディング、UI/UXデザインを自主的に学びたいと考えている学生たちを繋ぎ、応援するオンラインサークルです。
+      </p>
+      <p>
+        <a href="https://slack.com/intl/ja-jp/">Slack</a
+        >というチャットツールを使って、各自で勉強していることを共有したり、一緒にチームを組んでウェブアプリ開発やウェブサイト制作に取り組んでいきます。一人ではどうしていいかわからなくて立ち止まってしまうようなことも、Slackで訊けばメンバーの誰かが教えてくれるかもしれません。誰もわからなくても、一緒に調べてくれる人がいるだけで心強いですよね。
+      </p>
+      <p>
+        また、週に1回くらいのペースで、合同の「勉強会」や「もくもく会」を開催します。勉強会は、OJKや先輩に講義をしてもらったり、みんなでテーマを決めて勉強してきたことを発表したり。もくもく会というのは、普段は個人でやっている作業を同じ場所に集まってするというイベントです。本当に“黙々”と作業をしてもよいですが、わからないところを教え合ったり、お菓子を持ち寄っておしゃべりしながら作業するのが楽しそう。
+      </p>
+      <p>
+        ウェブクリの具体的な目的は「ポートフォリオ（作品集）」を積み上げていくことです。開発・制作した作品は<a
+          href="https://www.vivivit.com/"
+          >vivivit</a
+        >などのポートフォリオサービスに登録して関連企業の目に触れるようにします。また、2年生や3年生の夏休みに<a
+          href="https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%83%E3%82%AB%E3%82%BD%E3%83%B3"
+          >ハッカソン</a
+        >に参加することも目指しています。本学は普通の4年制大学（しかも文理融合型学科）ですから、プログラマやデザイナになりたければ、こうしたルートで企業から見つけてもらうほうが早道です。
+      </p>
+      <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+          <p>
+            <b><i class="fa fa-user w3-margin-right"></i>O J K</b> （顧問）
+          </p>
+          <br />
+          <img
+            src="img/ozekirin_long_circle.png"
+            class="w3-round w3-image w3-opacity w3-hover-opacity-off"
+            alt="Photo of OJK"
+            width="300"
+            height="333"
+          />
+        </div>
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6 w3-hide-small w3-padding-large">
+          OJKはウェブクリの顧問です。<br />
+          授業では、プログラミング入門（P5.js）、ウェブコンピューティング（HTMLとCSSの基礎）、ウェブアプリケーション論（JavaScript）、ウェブアプリケーション設計演習（Vue.js、API）を担当しています。<br />
+          これらは1年後期～3年後期にかけての授業ですが、ハッカソンへの参加を考えると2年後期までに終わらせるべき内容なので、ウェブクリではこれらの内容もできれば勉強してみたいと考えています。
+        </div>
+      </div>
+      <p class="w3-large w3-center w3-padding-16">We're challenge to:</p>
+      <p class="w3-wide"><i class="fa fa-laptop"></i>Web Programming</p>
+      <div class="w3-light-grey">
+        <div
+          class="w3-container w3-padding-small w3-dark-grey w3-center"
+          style="width: 75%"
+        >
+          75%
+        </div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+      <div class="w3-light-grey">
+        <div
+          class="w3-container w3-padding-small w3-dark-grey w3-center"
+          style="width: 35%"
+        >
+          35%
+        </div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-laptop"></i>Web GL (Game)</p>
+      <div class="w3-light-grey">
+        <div
+          class="w3-container w3-padding-small w3-dark-grey w3-center"
+          style="width: 10%"
+        >
+          10%
+        </div>
+      </div>
     </div>
 
-    <div class="w3-col m3">
-      <img src="img/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+      </div>
     </div>
-  </div>
 
-  <!-- <div class="w3-row-padding w3-center w3-section">
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+      <h3 class="w3-center">OUR WORK</h3>
+      <p class="w3-center">
+        <em>2020年のUebXliの活動成果です。</em>
+      </p>
+      <br />
+
+      <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+      <div class="w3-row-padding w3-center">
+        <div class="w3-col m3">
+          <a href="https://uebxli.github.io">
+            <img
+              src="img/01.png"
+              style="width: 100%"
+              class="w3-hover-opacity"
+              alt="UebXli Landing Page"
+            />
+          </a>
+        </div>
+
+        <div class="w3-col m3">
+          <a href="https://uebxli.github.io/ugok-radio">
+            <img
+              src="img/02.png"
+              style="width: 100%"
+              class="w3-hover-opacity"
+              alt="UGOK Radio"
+            />
+          </a>
+        </div>
+
+        <div class="w3-col m3">
+          <a href="https://uebxli.github.io/website-basic">
+            <img
+              src="img/03.png"
+              style="width: 100%"
+              class="w3-hover-opacity"
+              alt="Website for Practice 1"
+            />
+          </a>
+        </div>
+
+        <div class="w3-col m3">
+          <a href="https://uebxli.github.io/website-advanced">
+            <img
+              src="img/04.png"
+              style="width: 100%"
+              class="w3-hover-opacity"
+              alt="Website for Practice 2"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- <div class="w3-row-padding w3-center w3-section">
     <div class="w3-col m3">
       <img src="img/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
     </div>
@@ -120,84 +228,119 @@
     </div>
     <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
   </div> -->
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE WE WORK</h3>
-  <p class="w3-center"><em>気軽に訪ねてね。</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <img src="img/map.jpg" class="w3-image w3-round" style="width:100%">
     </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> MM801 / MM804-1<br>
-        <i class="fa fa-coffee fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Slack: <a href="https://uebxli.slack.com">uebxli.slack.com</a><br>
-        <i class="fa fa-twitter fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Twitter DM: <a href="https://twitter.com/ojklab">@ojklab</a><br>
+
+    <!-- Modal for full size images on click-->
+    <div
+      id="modal01"
+      class="w3-modal w3-black"
+      onclick="this.style.display='none'"
+    >
+      <span
+        class="w3-button w3-large w3-black w3-display-topright"
+        title="Close Modal Image"
+        ><i class="fa fa-remove"></i
+      ></span>
+      <div
+        class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
+      >
+        <img id="img01" class="w3-image" />
+        <p id="caption" class="w3-opacity w3-large"></p>
       </div>
     </div>
-  </div>
-</div>
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <!-- <div class="w3-xlarge w3-section">
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+      </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+      <h3 class="w3-center">WHERE WE WORK</h3>
+      <p class="w3-center"><em>気軽に訪ねてね。</em></p>
+
+      <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m4 w3-container">
+          <img
+            src="img/map.jpg"
+            class="w3-image w3-round"
+            style="width: 100%"
+          />
+        </div>
+        <div class="w3-col m8 w3-panel">
+          <div class="w3-large w3-margin-bottom">
+            <i
+              class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
+            ></i>
+            MM801 / MM804-1<br />
+            <i
+              class="fa fa-coffee fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
+            ></i>
+            Slack: <a href="https://uebxli.slack.com">uebxli.slack.com</a><br />
+            <i
+              class="fa fa-twitter fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
+            ></i>
+            Twitter DM: <a href="https://twitter.com/ojklab">@ojklab</a><br />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"
+    >
+      <a href="#home" class="w3-button w3-light-grey"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+      >
+      <!-- <div class="w3-xlarge w3-section">
     <a href="https://instagram.com/ojklab/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
     <i>　</i>
     <a href="https://twitter.com/ojklab/"><i class="fa fa-twitter w3-hover-opacity"></i></a>
   </div> -->
-  <p>&copy; 2020 UebXli&nbsp;&nbsp;All Rights Reserved</p>
-</footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+      <p>&copy; 2020 UebXli&nbsp;&nbsp;All Rights Reserved</p>
+    </footer>
 
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
+      // Change style of navbar on scroll
+      window.onscroll = function () {
+        myFunction();
+      };
+      function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          navbar.className =
+            "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+          navbar.className = navbar.className.replace(
+            " w3-card w3-animate-top w3-white",
+            ""
+          );
+        }
+      }
 
-</body>
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+  </body>
 </html>
